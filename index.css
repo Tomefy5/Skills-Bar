@@ -1,0 +1,118 @@
+*,::after,::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    font-size: 17px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section.container-skillsBar {
+    background-color: rgb(170, 168, 168);
+    width: 30%;
+    padding: 20px 30px;
+    border-radius: 6px;
+    height: auto;
+}
+
+.container-skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin: 10px 0;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 6px;
+}
+
+p.skill-titre {
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.skill-bar {
+    background-color: crimson;
+    height: 35px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.skill-html {
+    background-color:  #4285F4;
+    animation: widthSkillHtml 3s ease-in-out forwards;
+}
+
+@keyframes widthSkillHtml {
+    0% {
+        width: 0;
+        padding-left: -50px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.skill-css {
+    background-color: #FBBC05;
+    animation: widthSkillCss 3s ease-in-out forwards;
+}
+
+@keyframes widthSkillCss {
+    0% {
+        width: 0;
+        padding-left: -50px;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.skill-javascript {
+    background-color:  #34A853;
+    animation: widthSkillJavascript 3s ease-in-out forwards;
+}
+
+@keyframes widthSkillJavascript {
+    0% {
+        width: 0;
+        padding-left: -50px;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+.skill-php {
+    background-color: #EA4335;
+    animation: widthSkillPhp 3s ease-in-out forwards;
+}
+
+@keyframes widthSkillPhp {
+    0% {
+        width: 0;
+        padding-left: -50px;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
